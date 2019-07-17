@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const SpecialButton = () => {
+interface SpecialButtonProps {
+  text: string;
+}
+const SpecialButton = ({ text }: SpecialButtonProps) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button>{text}</button>
   );
 };
+
+export default SpecialButton;

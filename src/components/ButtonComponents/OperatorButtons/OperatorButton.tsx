@@ -1,9 +1,12 @@
 import React from "react";
 
-const OperatorButton = () => {
+interface OperatorButtonProps {
+  pair: {char: string, value: string};
+}
+const OperatorButton = ({ pair }: OperatorButtonProps) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button>{pair.char}</button>
   );
 };
+
+export default OperatorButton;
