@@ -1,0 +1,21 @@
+.container {
+  width: 25rem;
+  background-color: red;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+
+  .App {
+    display: grid;
+    grid-column-gap: 6%; // 11 column gaps * 6 == 66
+    grid-template-columns: repeat(12, 2.83333333%); // 66% of screen realestate left / 12 columns == 2.833333% per column
+    grid-template-rows: auto;
+    grid-template-areas:
+        "display display display display display display display display display display display display"
+        "specials specials specials specials specials specials specials specials specials operators operators operators"
+        "numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container operators operators operators"
+        "numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container operators operators operators"
+        "numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container operators operators operators"
+        "numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container numbers-container operators operators operators";
+  }
+}
