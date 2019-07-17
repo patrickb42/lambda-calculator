@@ -8,7 +8,7 @@ const Specials = () => {
   return (
     <div className="specials">
       {SpecialSymbols.map((specialSymbol) => {
-        return <SpecialButton text={specialSymbol} />;
+        return <SpecialButton key={specialSymbol} text={specialSymbol} />;
       })}
     </div>
   );

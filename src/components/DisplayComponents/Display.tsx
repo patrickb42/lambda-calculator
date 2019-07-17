@@ -1,10 +1,12 @@
 import React from 'react';
 
+import './Display.scss';
+
 interface DisplayProps {
-  text: string;
+  text?: string;
 }
-const Display = ({ text }: DisplayProps) => {
-  return <div>{text}</div>;
+const Display = ({ text = '0' }: DisplayProps) => {
+  return <div className="display">{text}</div>;
 };
 
 export default Display;
