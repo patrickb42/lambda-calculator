@@ -1,5 +1,10 @@
-import React from "react";
+import React from 'react';
 
-const Display = () => {
-  return <div>{/* Display any props data here */}</div>;
+interface DisplayProps {
+  text: string;
+}
+const Display = ({ text }: DisplayProps) => {
+  return <div>{text}</div>;
 };
+
+export default Display;

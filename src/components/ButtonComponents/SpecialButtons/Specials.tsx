@@ -2,10 +2,11 @@ import React from 'react';
 import SpecialButton from './SpecialButton';
 
 import { specials as SpecialSymbols } from '../../../data';
+import './Specials.scss';
 
 const Specials = () => {
   return (
-    <div>
+    <div className="specials">
       {SpecialSymbols.map((specialSymbol) => {
         return <SpecialButton text={specialSymbol} />;
       })}
