@@ -32,3 +32,10 @@ function App() {
 }
 
 export default App;
+
+// special 2061b0
+// symbole 3db5e5
+// number  123c78
+// body    bb1233
+// display 2d2829
+

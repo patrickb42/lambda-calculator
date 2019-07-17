@@ -1,3 +1,5 @@
 .numbers {
-  background-color: blue;
+  grid-area: numbers-container;
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -1,8 +1,9 @@
 @import '../../scss/1-scss-partials/scss-partials-dir';
-.logo-container {
-  float: right;
 
-  @include tablet {
-    float: left;
+.logo-container {
+  width: 7rem;
+
+  .logo {
+    width: 100%;
   }
 }
